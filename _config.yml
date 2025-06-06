@@ -1,6 +1,6 @@
 baseurl: '/'
 permalink: pretty
-title: 'Jekyll Serif'
+title: valantic LT
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
@@ -19,18 +19,6 @@ collections:
     sort_by: weight
   team:
     output: true
-
-defaults:
-  - scope:
-      path: ""
-      type: "services"
-    values:
-      layout: "service"
-  - scope:
-      path: ""
-      type: "team"
-    values:
-      layout: "team"
 
 sass:
   style: compressed # possible values: nested expanded compact compressed

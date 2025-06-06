@@ -1,33 +1,17 @@
 [
   {
-    "name": "Github",
-    "link": "https://github.com/zerostaticthemes/jekyll-serif-theme",
-    "image": "images/social/github.svg"
-  },
-  {
-    "name": "Twitter",
-    "link": "https://twitter.com/zerostaticio",
-    "image": "images/social/twitter.svg"
-  },
-  {
-      "name": "Facebook",
-      "link": "https://facebook.com",
-      "image": "images/social/facebook.svg"
-  },
-  {
-      "name": "Email",
-      "link": "mailto:ekyllserif@example.com ",
-      "image": "images/social/email.svg"
+      "name": "Linkedin",
+      "link": "https://www.linkedin.com/company/valantic-lt/",
+      "image": "images/social/linkedin.svg"
   },
   {
       "name": "Instagram",
-      "link": "https://instagram.com",
+      "link": "https://www.instagram.com/valanticlt/?",
       "image": "images/social/instagram.svg"
   },
   {
-      "name": "Discord",
-      "link": "https://discord.com",
-      "image": "images/social/discord.svg"
+    "name": "Email",
+    "link": "mailto:ausra.armoskaite@cec.valantic.com",
+    "image": "images/social/email.svg"
   }
-
 ]

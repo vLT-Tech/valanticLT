@@ -78,9 +78,6 @@ $sub-footer-text-color: $white;
 @import "bootstrap/helpers";
 @import "bootstrap/utilities/api";
 
-// Libraries
-@import "libraries/hamburgers/hamburgers";
-
 // Components
 @import "components/type";
 @import "components/page";
@@ -88,9 +85,6 @@ $sub-footer-text-color: $white;
 @import "components/footer";
 @import "components/sub-footer";
 @import "components/logo";
-@import "components/main-menu";
-@import "components/main-menu-mobile";
-@import "components/hamburger";
 @import "components/buttons";
 @import "components/call";
 @import "components/title";
@@ -104,8 +98,6 @@ $sub-footer-text-color: $white;
 
 // Pages
 @import "pages/page-home";
-@import "pages/page-teams";
-@import "pages/page-service";
 
 body {
   font-size: 16px;
