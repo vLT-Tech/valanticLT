@@ -1,10 +1,13 @@
 .logo {
   display: none;
+  width: 100px;
+  height: auto;
   @include media-breakpoint-up(sm) {
     display: block;
   }
   img {
-    max-width: unset;
+    width: 100%;
+    height: auto;
   }
   a {
     display: block;
@@ -14,8 +17,7 @@
 }
 .logo-mobile {
   display: block;
-  width: 40px;
-  padding: 10px 0 10px 0;
+  width: 100px;
   @include media-breakpoint-up(sm) {
     display: none;
   }

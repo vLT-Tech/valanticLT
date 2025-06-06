@@ -3,67 +3,301 @@ layout: default
 bodyClass: "page-home"
 ---
 
-<div class="intro">
+<!-- Hero Section -->
+<section class="hero-section">
   <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ content }}
-        {% if page.show_call_box %}
-          {% include call.html show_button=true %}
-        {% endif %}
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="gradient-text">Expert Developers</span><br>
+            Ready to Scale Your Product
+          </h1>
+          <p class="hero-subtitle">
+            Get started fast with expert developers who deliver results — on time and on budget.
+          </p>
+          
+          <div class="rates-section">
+            <div class="rates-grid">
+              <div class="rate-category">
+                <h3 class="rate-level">Mid-Level Developer</h3>
+                <div class="rate-options">
+                  <div class="rate-option">
+                    <span class="rate-type">Hourly</span>
+                    <span class="rate-price">51€</span>
+                  </div>
+                  <div class="rate-option">
+                    <span class="rate-type">Monthly</span>
+                    <span class="rate-price">~7k €</span>
+                  </div>
+                </div>
+                <p class="rate-skills">React • Node.js • TypeScript</p>
+              </div>
+              
+              <div class="rate-category">
+                <h3 class="rate-level">Senior Developer</h3>
+                <div class="rate-options">
+                  <div class="rate-option">
+                    <span class="rate-type">Hourly</span>
+                    <span class="rate-price">66€</small></span>
+                  </div>
+                  <div class="rate-option">
+                    <span class="rate-type">Monthly</span>
+                    <span class="rate-price">~9k €</span>
+                  </div>
+                </div>
+                <p class="rate-skills">Full-Stack • Architecture • Leadership</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>2 weeks</strong>
+              <span>avg. start time</span>
+            </div>
+            <div class="stat">
+              <strong>95%</strong>
+              <span>client retention</span>
+            </div>
+            <div class="stat">
+              <strong>160h</strong>
+              <span>monthly commitment</span>
+            </div>
+          </div>
+        </div>
       </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+      
+      <div class="col-12 col-lg-4">
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="control red"></span>
+                <span class="control yellow"></span>
+                <span class="control green"></span>
+              </div>
+              <span class="window-title">your-project.js</span>
+            </div>
+            <div class="code-content">
+              <div class="code-line">
+                <span class="code-comment">// Your vision</span>
+              </div>
+              <div class="code-line">
+                <span class="code-keyword">const</span> 
+                <span class="code-variable">success</span> 
+                <span class="code-operator">=</span> 
+                <span class="code-function">buildWith</span>(<span class="code-string">'expert-devs'</span>);
+              </div>
+              <div class="code-line">
+                <span class="code-comment">// Our execution</span>
+              </div>
+              <div class="code-line typing-animation">
+                <span class="code-variable">result</span>
+                <span class="code-operator">:</span> 
+                <span class="code-string">'production-ready'</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      {% endif %}
     </div>
   </div>
-</div>
+</section>
 
-<div class="strip">
-  <div class="container pt-6 pb-6 pb-md-10">
-    <div class="row justify-content-start">
-      {% assign limit = site.home.limit_services | default: 6 %}
-      {% for service in site.services limit: limit %}
-      <div class="col-12 col-md-4 mb-1">
-        <div class="service service-summary">
-          <div class="service-content">
-            <h2 class="service-title">
-              <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
-            </h2>
-            <p>{{ service.excerpt | markdownify | strip_html | truncate: 100 }}</p>
+<!-- How We Operate Section -->
+<section class="operate-section" style="background-color: #100c2a; color: #ffffff;">
+  <div class="container">
+    <div class="row pt-6 pb-6">
+      <div class="col-12">
+        <h2 class="section-title text-center mb-5">How We <span class="gradient-text">Operate</span></h2>
+        <div class="operate-grid">
+          {% assign operations = site.operate | sort: "weight" %}
+          {% for op in operations %}
+          <div class="operate-card">
+            <div class="operate-icon">
+              {% case op.icon %}
+              {% when "plug" %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF4B4B" viewBox="0 0 24 24"><path d="M13 10V4a1 1 0 1 0-2 0v6H8a1 1 0 1 0 0 2h2v2.586l-4.707 4.707a1 1 0 0 0 1.414 1.414L12 15.414l5.293 5.293a1 1 0 0 0 1.414-1.414L14 14.586V12h2a1 1 0 1 0 0-2h-3z"/></svg>
+              {% when "clock" %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#FF744F" viewBox="0 0 24 24"><path d="M12 1a11 11 0 1 0 11 11A11.012 11.012 0 0 0 12 1zm0 20a9 9 0 1 1 9-9 9.01 9.01 0 0 1-9 9zm.5-9.707V6a1 1 0 0 0-2 0v6a1 1 0 0 0 .293.707l3 3a1 1 0 0 0 1.414-1.414z"/></svg>
+              {% when "star" %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#C0AA81" viewBox="0 0 24 24"><path d="M12 2l2.39 6.953h7.299l-5.904 4.293 2.387 6.954L12 15.907l-6.172 4.293 2.387-6.954L2.311 8.953h7.299z"/></svg>
+              {% when "gear" %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#5B26B7" viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 1-4 4 4 4 0 0 1 4-4zm8.94 5a7.987 7.987 0 0 0-.21-2h2.15a.5.5 0 0 0 .49-.6l-.36-2a.5.5 0 0 0-.49-.4h-2.4a7.998 7.998 0 0 0-1.47-2.5l1.7-1.7a.5.5 0 0 0 0-.7l-1.4-1.4a.5.5 0 0 0-.7 0l-1.7 1.7A7.998 7.998 0 0 0 13 3.06V.5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v2.56a7.998 7.998 0 0 0-2.5 1.47l-1.7-1.7a.5.5 0 0 0-.7 0l-1.4 1.4a.5.5 0 0 0 0 .7l1.7 1.7A7.998 7.998 0 0 0 3.06 11H.5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2.56a7.998 7.998 0 0 0 1.47 2.5l-1.7 1.7a.5.5 0 0 0 0 .7l1.4 1.4a.5.5 0 0 0 .7 0l1.7-1.7A7.998 7.998 0 0 0 11 20.94v2.56a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2.56a7.998 7.998 0 0 0 2.5-1.47l1.7 1.7a.5.5 0 0 0 .7 0l1.4-1.4a.5.5 0 0 0 0-.7l-1.7-1.7A7.998 7.998 0 0 0 20.94 13z"/></svg>
+              {% when "chat" %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#A78DB6" viewBox="0 0 24 24"><path d="M21 6h-2v9H6v2a1 1 0 0 0 1 1h9l4 4V7a1 1 0 0 0-1-1zM3 15V3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v1H5a2 2 0 0 0-2 2v9z"/></svg>
+              {% endcase %}
+            </div>
+            <h3 class="operate-title">{{ op.title }}</h3>
+            <p class="operate-description">{{ op.description }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack Section -->
+<section class="tech-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Our <span class="gradient-text">Tech Arsenal</span></h2>
+        <p class="section-subtitle">Cutting-edge technologies and frameworks our experts master</p>
+        
+        <div class="tech-categories">
+          <div class="tech-category">
+            <h3>AI & Modern Backend</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">LLMs</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Go</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">TypeScript</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h3>Frontend Frameworks</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">React Native</span>
+            </div>
+          </div>
+          
+          <div class="tech-category">
+            <h3>Enterprise Solutions</h3>
+            <div class="tech-tags">
+              <span class="tech-tag">Symfony</span>
+              <span class="tech-tag">Spryker</span>
+              <span class="tech-tag">Shopware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Key Strengths Section -->
+<section class="strengths-section" style="background-color: #100c2a; color: #ffffff;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6">
+        <h2 class="section-title">Why Choose Our <span class="gradient-text">Expert Network</span></h2>
+        <p class="section-description">
+          We don't just provide developers — we deliver strategic partners who understand your business context.
+        </p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="strengths-grid">
+          {% assign strengths = site.strength | sort: "weight" %}
+          {% for strength in strengths %}
+          <div class="strength-card">
+            <div class="strength-icon">
+              {% case strength.icon %}
+                {% when "users" %}
+                  <!-- Users Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="#FF4B4B" d="M16 11a4 4 0 1 0-8 0a4 4 0 0 0 8 0zm-8 2c-2.21 0-4 1.79-4 4v1h12v-1c0-2.21-1.79-4-4-4H8zM20 11a3 3 0 1 0-6 0a3 3 0 0 0 6 0zm-6 2c-1.66 0-3 1.34-3 3v.5h6V16c0-1.66-1.34-3-3-3z"/>
+                  </svg>
+                {% when "trophy" %}
+                  <!-- Trophy Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="#FF744F" d="M18 3H6a1 1 0 0 0-1 1v3c0 2 1.5 3.5 3.5 3.5h.5v2.5H8a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2h-1.5V10.5h.5C17.5 10.5 19 9 19 7V4a1 1 0 0 0-1-1zm-1 4.5c0 .83-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5V5h8v2.5zM7 16h10v2H7v-2z"/>
+                  </svg>
+                {% when "rank" %}
+                  <!-- Rank/2nd Place Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="#C0AA81" d="M12 2L8.24 8.26L1 9.27l5.62 5.48L4.7 22L12 18.56L19.3 22l-1.9-7.25L23 9.27l-7.24-1.01L12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/>
+                  </svg>
+                {% when "target" %}
+                  <!-- Target (Bullseye) Icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path fill="#5B26B7" d="M12 2A10 10 0 1 0 22 12 10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8a8.009 8.009 0 0 1-8 8zm0-14a6 6 0 1 0 6 6a6.007 6.007 0 0 0-6-6zm0 10a4 4 0 1 1 4-4a4.005 4.005 0 0 1-4 4zm0-6a2 2 0 1 0 2 2a2.002 2.002 0 0 0-2-2z"/>
+                  </svg>
+              {% endcase %}
+            </div>
+            <h4 class="strength-title">{{ strength.title }}</h4>
+            <p class="strength-description">{{ strength.description }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section class="process-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Let's Build <span class="gradient-text">Something Great</span></h2>
+        <p class="section-subtitle">Our proven 5-step process to find your perfect development partner</p>
+
+        <div class="process-timeline">
+          {% assign steps = site.process | sort: "weight" %}
+          {% for step in steps %}
+          <div class="process-step">
+            <div class="step-number">{{ forloop.index }}</div>
+            <div class="step-content">
+              <h4>{{ step.title }}</h4>
+              <p>{{ step.description }}</p>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="process-cta">
+          <p class="cta-text">Ready to get started? Connect with our team below.</p>
+          <div class="cta-arrow">↓</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="team-section">
+  <div class="container pt-6 pb-6">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+      </div>
+    </div>
+    
+    <div class="row pt-6 pb-6">
+      {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
+      {% for team in teams %}
+      <div class="col-12 col-md-4 mb-3">
+        <div class="team team-summary">
+          {% if team.image %}
+          <div class="team-image">
+            <img width="80" height="80" alt="{{ team.title }}" class="img-fluid" src="{{ team.image | relative_url }}" />
+          </div>
+          {% endif %}
+          
+          <div class="team-meta">
+            <h3 class="team-name">
+              <a href="{{ team.url | relative_url }}">{{ team.title }}</a>
+            </h3>
+            <p class="team-description">{{ team.jobtitle }}</p>
+            
+            {% if team.linkedinurl %}
+            <a class="team-linkedin" target="_blank" href="{{ team.linkedinurl }}" rel="noreferrer" aria-label="View {{ team.title }}'s LinkedIn profile">
+              Schedule a Call
+            </a>
+            {% endif %}
           </div>
         </div>
       </div>
       {% endfor %}
     </div>
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{ "services" | relative_url }}">View All Services</a>
-      </div>
-    </div>
   </div>
-</div>
-
-{% if site.data.features %}
-<div class="strip strip-grey">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-    <div class="row justify-content-center">
-
-      {% for feature in site.data.features %}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          {% if feature.image %}
-          <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ feature.image.url | relative_url }}" width="{{ feature.image.width }}" height="{{ feature.image.height }}" /></div>
-          {% endif %}
-          <h2 class="feature-title">{{ feature.title }}</h2>
-          <div class="feature-content">{{ feature.description }}</div>
-        </div>
-      </div>
-      {% endfor %}
-
-    </div>
-  </div>
-</div>
-{% endif %}
+</section>

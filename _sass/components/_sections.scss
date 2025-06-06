@@ -1,0 +1,301 @@
+section {
+  padding: 3rem 0;
+  background: $brand-black;
+}
+
+.section-title {
+  @include headline-text;
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  margin-bottom: 1rem;
+  
+  // For non-gradient parts
+  color: #ffffff;
+  background: none;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  
+  .gradient-text {
+    @include headline-text;
+  }
+}
+
+.section-subtitle {
+  @include teaser-text;
+  color: $brand-silver; // Override for dark background
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-description {
+  @include copy-text;
+  color: $brand-silver; // Override for dark background
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 0 0 3rem;
+  }
+}
+
+.operate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.operate-card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.75rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.operate-card:hover {
+  transform: translateY(-6px);
+  border-color: #FF4B4B;
+  background: rgba(255, 75, 75, 0.05);
+}
+
+.operate-icon {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+}
+
+.operate-title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.operate-description {
+  color: #CDCDCD;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Tech Stack Section */
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.tech-category h3 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid $brand-secondary-purple;
+  padding-bottom: 0.5rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  border-color: var(--peach);
+  background: rgba(255, 116, 79, 0.1);
+}
+
+.tech-tag.featured {
+  background: var(--gradient);
+  border-color: transparent;
+  font-weight: 600;
+}
+
+/* Strengths Section */
+.strengths-section {
+  .section-title {
+    text-align: left;
+  }
+
+  .strengths-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .strength-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+    max-width: 100%;
+    word-wrap: break-word;
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: #FF4B4B;
+      background: rgba(255, 75, 75, 0.05);
+    }
+  }
+
+  .strength-icon {
+    margin-bottom: 0.75rem;
+
+    svg {
+      width: 36px;
+      height: 36px;
+      max-width: 100%;
+    }
+  }
+
+  .strength-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: initial;
+  }
+
+  .strength-description {
+    font-size: 0.95rem;
+    color: #CDCDCD;
+    line-height: 1.5;
+  }
+}
+
+/* Team Section */
+.team {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  height: 100%;
+  
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $brand-coral-red;
+    background: rgba($brand-coral-red, 0.05);
+  }
+  
+  .team-image {
+    margin-bottom: 1.5rem;
+    
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba($brand-silver, 0.2);
+      transition: border-color 0.3s ease;
+    }
+  }
+  
+  &:hover .team-image img {
+    border-color: $brand-peach;
+  }
+  
+  .team-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        background: $brand-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+  }
+  
+  .team-description {
+    @include subheadline-text;
+    color: $brand-silver;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $brand-lavender;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: $brand-peach;
+      transform: translateX(2px);
+    }
+    
+    &::before {
+      content: "→";
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .typing-animation {
+    animation: none;
+  }
+  
+  .pricing-card:hover,
+  .btn-primary:hover,
+  .operate-card:hover,
+  .strength-item:hover {
+    transform: none;
+  }
+}

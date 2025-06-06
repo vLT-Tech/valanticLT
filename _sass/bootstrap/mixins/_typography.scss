@@ -1,0 +1,26 @@
+@mixin headline-text {
+  font-family: $font-family-base;
+  font-weight: 600; // Semibold
+  background: $brand-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin teaser-text {
+  font-family: $font-family-base;
+  font-weight: 400; // Regular
+  color: $brand-vibrant-purple;
+}
+
+@mixin subheadline-text {
+  font-family: $font-family-base;
+  font-weight: 400; // Regular
+  color: $brand-vibrant-purple;
+}
+
+@mixin copy-text {
+  font-family: $font-family-base;
+  font-weight: 400; // Regular
+  color: $brand-black;
+}

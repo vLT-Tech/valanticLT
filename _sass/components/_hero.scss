@@ -1,0 +1,264 @@
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba($brand-vibrant-purple, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+}
+
+.hero-content {
+  padding: 2rem 0;
+}
+
+.hero-title {
+  @include headline-text;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  
+  // For non-gradient parts
+  color: #ffffff;
+  background: none;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  
+  .gradient-text {
+    @include headline-text;
+  }
+}
+
+.hero-subtitle {
+  @include teaser-text;
+  color: $brand-silver;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+// Rates Section
+.rates-section {
+  margin-bottom: 3rem;
+}
+
+.rates-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.rate-category {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    border-color: $brand-coral-red;
+    background: rgba($brand-coral-red, 0.05);
+  }
+}
+
+.rate-level {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.rate-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.rate-option {
+  flex: 1;
+  text-align: center;
+}
+
+.rate-type {
+  display: block;
+  color: $brand-silver;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.rate-price {
+  display: block;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  
+  small {
+    font-size: 0.7rem;
+    color: $brand-silver;
+    font-weight: 400;
+  }
+}
+
+.rate-skills {
+  color: $brand-lavender;
+  font-size: 0.85rem;
+  text-align: center;
+  margin: 0;
+}
+
+// Hero Stats
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @media (min-width: 992px) {
+    align-items: flex-start;
+  }
+  
+  strong {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  span {
+    color: $brand-silver;
+    font-size: 0.85rem;
+  }
+}
+
+// Hero Visual (Code Window)
+.hero-visual {
+  position: relative;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-window {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+}
+
+.window-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.window-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 1rem;
+}
+
+.control {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  
+  &.red { background: #FF5F56; }
+  &.yellow { background: #FFBD2E; }
+  &.green { background: #27CA3F; }
+}
+
+.window-title {
+  color: $brand-silver;
+  font-size: 0.9rem;
+}
+
+.code-content {
+  padding: 1.5rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.code-line {
+  margin-bottom: 0.5rem;
+}
+
+.code-comment { color: #6B7D8F; }
+.code-keyword { color: $brand-coral-red; }
+.code-variable { color: #E6DB74; }
+.code-operator { color: #F8F8F2; }
+.code-function { color: $brand-peach; }
+.code-string { color: #A6E22E; }
+
+.typing-animation {
+  animation: typewriter 2s steps(20) infinite;
+}
+
+@keyframes typewriter {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0.7; }
+}
+
+// Responsive
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero-visual {
+    height: 300px;
+    margin-bottom: 2rem;
+  }
+  
+  .rates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .rate-options {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .hero-stats {
+    justify-content: center;
+  }
+}
+
+// Accessibility
+@media (prefers-reduced-motion: reduce) {
+  .typing-animation {
+    animation: none;
+  }
+  
+  .rate-category:hover {
+    transform: none;
+  }
+}
