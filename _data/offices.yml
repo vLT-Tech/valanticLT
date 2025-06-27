@@ -1,0 +1,5 @@
+locations:
+  - town: Kaunas
+    image: "images/Kaunas.png"
+  - town: Vilnius
+    image: "images/Vilnius.jpg"

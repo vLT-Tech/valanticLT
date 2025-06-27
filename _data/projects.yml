@@ -1,0 +1,82 @@
+- id: vcec-de
+  name: "vCEC DE"
+  client: "Spryker"
+  tech_stack: ["Spryker", "PHP", "JavaScript"]
+  services:
+    - "Team staffing"
+    - "Technical leadership" 
+    - "Development"
+    - "Solution architecture"
+    - "Training"
+  developers:
+    - name: "Sarah Chen"
+      role: "Lead Developer"
+      profile_url: "https://decidalo.com/profiles/sarah-chen"
+      avatar: "images/developers/2.svg"
+      skills: ["PHP", "Spryker", "Architecture"]
+    - name: "Marcus Weber"
+      role: "Senior Backend Developer"
+      profile_url: "https://decidalo.com/profiles/marcus-weber"
+      avatar: "images/developers/1.svg"
+      skills: ["PHP", "MySQL", "API Design"]
+    - name: "Lisa Thompson"
+      role: "Frontend Specialist"
+      profile_url: "https://decidalo.com/profiles/lisa-thompson"
+      avatar: "images/developers/2.svg"
+      skills: ["JavaScript", "React", "UI/UX"]
+
+- id: vnxt-stripe
+  name: "vNXT"
+  client: "Stripe"
+  tech_stack: ["Python", "React", "PostgreSQL"]
+  services:
+    - "Technical consultancy"
+    - "Development"
+  developers:
+    - name: "Michael Zhang"
+      role: "Senior Consultant"
+      profile_url: "https://decidalo.com/profiles/michael-zhang"
+      avatar: "images/developers/1.svg"
+      skills: ["Python", "Architecture", "Consulting"]
+    - name: "Anna Kowalski"
+      role: "Full-Stack Developer"
+      profile_url: "https://decidalo.com/profiles/anna-kowalski"
+      avatar: "images/developers/2.svg"
+      skills: ["Python", "React", "PostgreSQL"]
+
+- id: vmuc-vally
+  name: "vMUC"
+  client: "vally"
+  tech_stack: ["Node.js", "React", "TypeScript"]
+  services:
+    - "Team staffing"
+    - "Technical leadership"
+    - "Development"
+    - "Consulting"
+  developers:
+    - name: "Alex Rodriguez"
+      role: "Technical Lead"
+      profile_url: "https://decidalo.com/profiles/alex-rodriguez"
+      avatar: "images/developers/1.svg"
+      skills: ["Node.js", "TypeScript", "Leadership"]
+    - name: "Emma Johnson"
+      role: "Full-Stack Developer"
+      profile_url: "https://decidalo.com/profiles/emma-johnson"
+      avatar: "images/developers/2.svg"
+      skills: ["React", "Node.js", "GraphQL"]
+    - name: "David Kim"
+      role: "DevOps Engineer"
+      profile_url: "https://decidalo.com/profiles/david-kim"
+      avatar: "images/developers/1.svg"
+      skills: ["AWS", "Docker", "CI/CD"]
+    - name: "Sophie Mueller"
+      role: "Senior Developer"
+      profile_url: "https://decidalo.com/profiles/sophie-mueller"
+      avatar: "images/developers/2.svg"
+      skills: ["TypeScript", "React", "Testing"]
+    - name: "James Park"
+      role: "Backend Developer"
+      profile_url: "https://decidalo.com/profiles/james-park"
+      avatar: "images/developers/1.svg"
+      skills: ["Node.js", "MongoDB", "APIs"]
+

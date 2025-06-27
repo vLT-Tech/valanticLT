@@ -23,7 +23,7 @@ section {
 
 .section-subtitle {
   @include teaser-text;
-  color: $brand-silver; // Override for dark background
+  color: $brand-silver;
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 3rem;
@@ -34,7 +34,7 @@ section {
 
 .section-description {
   @include copy-text;
-  color: $brand-silver; // Override for dark background
+  color: $brand-silver;
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 2rem;
@@ -44,54 +44,6 @@ section {
   section {
     padding: 0 0 3rem;
   }
-}
-
-.operate-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.operate-card {
-  flex: 1 1 300px;
-  max-width: 300px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.75rem;
-  border-radius: 16px;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.operate-card:hover {
-  transform: translateY(-6px);
-  border-color: #FF4B4B;
-  background: rgba(255, 75, 75, 0.05);
-}
-
-.operate-icon {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-}
-
-.operate-title {
-  color: #ffffff;
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.operate-description {
-  color: #CDCDCD;
-  font-size: 0.95rem;
-  line-height: 1.5;
 }
 
 /* Tech Stack Section */
@@ -138,65 +90,53 @@ section {
   font-weight: 600;
 }
 
-/* Strengths Section */
-.strengths-section {
-  .section-title {
-    text-align: left;
-  }
+/* Operate Section */
+.operate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
 
-  .strengths-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+.operate-card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.75rem;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
 
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
-  }
+.operate-card:hover {
+  transform: translateY(-6px);
+  border-color: #FF4B4B;
+  background: rgba(255, 75, 75, 0.05);
+}
 
-  .strength-card {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 16px;
-    padding: 1.5rem;
-    text-align: center;
-    transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
-    overflow: hidden;
-    max-width: 100%;
-    word-wrap: break-word;
+.operate-icon {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+}
 
-    &:hover {
-      transform: translateY(-5px);
-      border-color: #FF4B4B;
-      background: rgba(255, 75, 75, 0.05);
-    }
-  }
+.operate-title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
-  .strength-icon {
-    margin-bottom: 0.75rem;
-
-    svg {
-      width: 36px;
-      height: 36px;
-      max-width: 100%;
-    }
-  }
-
-  .strength-title {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 0.5rem;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: initial;
-  }
-
-  .strength-description {
-    font-size: 0.95rem;
-    color: #CDCDCD;
-    line-height: 1.5;
-  }
+.operate-description {
+  color: #CDCDCD;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 /* Team Section */

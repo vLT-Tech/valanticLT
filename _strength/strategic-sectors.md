@@ -1,6 +1,6 @@
 ---
-title: "Strategic Sectors: AI, Fintech, Cybersecurity"
+title: "EU Timezone"
 icon: "target"
-description: "Top expertise in AI, Fintech, Cybersecurity, and Defence industries."
+description: "Seamless collaboration during business hours."
 weight: 4
 ---
