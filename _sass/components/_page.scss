@@ -6,3 +6,29 @@
     flex: 1 0 0;
   }
 }
+
+.w-full {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

@@ -1,25 +1,43 @@
-<div class='header'>
+<div class='header header-fixed'>
   <div class="container">
-    <div class="logo">
-      <a href="{{ site.baseurl }}" aria-label="Go to homepage">
-        <img 
-          width="{{ site.logo.desktop_width }}" 
-          height="{{ site.logo.desktop_height }}" 
-          alt="{{ site.title }}" 
-          src="{{ site.logo.desktop | relative_url }}" 
-        />
-      </a>
+    <div class="w-full justify-between">
+      <div class="logo-wrapper">
+        <div class="logo">
+          <a href="{{ site.baseurl }}" aria-label="Go to homepage">
+            <img 
+              width="{{ site.logo.desktop_width }}" 
+              height="{{ site.logo.desktop_height }}" 
+              alt="{{ site.title }}" 
+              src="{{ site.logo.desktop | relative_url }}" 
+            />
+          </a>
+        </div>
+
+        <div class="tagline">
+          | Lithuanian Talent Hub
+        </div>
+      </div>
+      
+      <div class="logo-mobile">
+        <a href="{{ site.baseurl }}" aria-label="Go to homepage">
+          <img 
+            width="{{ site.logo.mobile_width }}" 
+            height="{{ site.logo.mobile_height }}" 
+            alt="{{ site.title }}" 
+            src="{{ site.logo.mobile | relative_url }}" 
+          />
+        </a>
+      </div>
+
+      <div class="w-full justify-end">
+        <button class="schedule-call-btn header" onclick="window.open('{{ site.data.contact.contact_button_link }}', '_blank')">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+          </svg>
+          Schedule a Call
+        </button>
+      </div>
     </div>
-    
-    <div class="logo-mobile">
-      <a href="{{ site.baseurl }}" aria-label="Go to homepage">
-        <img 
-          width="{{ site.logo.mobile_width }}" 
-          height="{{ site.logo.mobile_height }}" 
-          alt="{{ site.title }}" 
-          src="{{ site.logo.mobile | relative_url }}" 
-        />
-      </a>
-    </div>
+
   </div>
 </div>

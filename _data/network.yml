@@ -1,12 +1,27 @@
-title: "Lithuanian IT market"
-highlight: "Why Choose our Expert Network"
-description: "We don't just provide developers — we deliver strategic partners who understand your business context."
-cost:
-  title: "Cost-Effective Partnership"
-  text: "While German companies face employer costs up to 3x higher than quoted salaries, Lithuanian partnerships offer transparent pricing with minimal overhead."
-innovation:
-  rank: "#1"
-  badge_text: "Digital Skills Globally"
-  source: "IMD Talent Yearbook 2024"
-  title: "Future-Ready Innovators"
-  text: "From the world's most powerful laser through to global leaders in VPN technology, Lithuanian ingenuity and creativity is impacting research and product development globally. Companies assemble world-class research teams here at highly competitive costs."
+- title: "Expertise & Specialization"
+  icon: "images/icons/target.svg"
+  features:
+    - "Fintech, Cybersecurity & E-commerce specialists"
+    - "Senior-level professionals across all roles"
+    - "Hands-on AI and emerging tech expertise"
+
+- title: "Proven Track Record"
+  icon: "images/icons/star.svg"
+  features:
+    - "5+ years partnership with valantic Group"
+    - "Multicultural project experience"
+    - "Validated success across diverse markets"
+
+- title: "Comprehensive Solutions"
+  icon: "images/icons/bag.svg"
+  features:
+    - "Cross-functional engineering teams"
+    - "Consulting and leadership guidance"
+    - "End-to-end project delivery"
+
+- title: "Partnership Excellence"
+  icon: "images/icons/checkmark-circle.svg"
+  features:
+    - "Competitive and transparent pricing"
+    - "Tailored recruitment processes"
+    - "Feedback-driven culture"

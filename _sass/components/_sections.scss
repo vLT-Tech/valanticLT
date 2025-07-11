@@ -46,99 +46,6 @@ section {
   }
 }
 
-/* Tech Stack Section */
-.tech-categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 3rem;
-  margin-top: 3rem;
-}
-
-.tech-category h3 {
-  color: #ffffff;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid $brand-secondary-purple;
-  padding-bottom: 0.5rem;
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.tech-tag {
-  background: rgba(255, 255, 255, 0.05);
-  color: #ffffff;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  font-size: 0.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-}
-
-.tech-tag:hover {
-  border-color: var(--peach);
-  background: rgba(255, 116, 79, 0.1);
-}
-
-.tech-tag.featured {
-  background: var(--gradient);
-  border-color: transparent;
-  font-weight: 600;
-}
-
-/* Operate Section */
-.operate-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.operate-card {
-  flex: 1 1 300px;
-  max-width: 300px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1.75rem;
-  border-radius: 16px;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-.operate-card:hover {
-  transform: translateY(-6px);
-  border-color: #FF4B4B;
-  background: rgba(255, 75, 75, 0.05);
-}
-
-.operate-icon {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-}
-
-.operate-title {
-  color: #ffffff;
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.operate-description {
-  color: #CDCDCD;
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
 /* Team Section */
 .team {
   background: rgba(255, 255, 255, 0.03);
@@ -169,7 +76,7 @@ section {
   }
   
   &:hover .team-image img {
-    border-color: $brand-peach;
+    border-color: $accent-color;
   }
   
   .team-name {
@@ -209,7 +116,7 @@ section {
     transition: all 0.3s ease;
     
     &:hover {
-      color: $brand-peach;
+      color: $accent-color;
       transform: translateX(2px);
     }
     

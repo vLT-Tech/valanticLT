@@ -3,7 +3,7 @@
 
 // Colors
 $brand-coral-red: #FF4B4B;
-$brand-peach: #FF744F;
+$accent-color: #FF744F;
 $brand-black: #100C2A;
 $brand-vibrant-purple: #5B26B7;
 $brand-secondary-purple: #5B26B7;
@@ -13,13 +13,17 @@ $brand-silver: #CDCDCD;
 $brand-lavender: #A78DB6;
 $white: #ffffff;
 $white-offset: #F9F9F9;
+$text-primary: #ffffff;
+$text-secondary: #F9F9F9;
+$background-primary: #100C2A;
+$background-secondary: hsla(0,0%,100%,.03);
 
-$brand-gradient: linear-gradient(45deg, $brand-coral-red, $brand-peach);
+$brand-gradient: linear-gradient(45deg, $brand-coral-red, $accent-color);
 
 // Links
 $link-color: $brand-coral-red;
 $link-decoration: none;
-// $link-hover-color: color.adjust($brand-peach, $lightness: 10%);
+// $link-hover-color: color.adjust($accent-color, $lightness: 10%);
 $link-hover-decoration: underline;
 
 // Fonts
