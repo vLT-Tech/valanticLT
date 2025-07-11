@@ -18,11 +18,10 @@
     }
   }
   
-  &.header-absolute {
-    position: absolute;
+  &.header-fixed {
+    position: fixed;
     z-index: 10;
     width: 100%;
-    background-color: rgba($brand-black, 0.95);
     backdrop-filter: blur(10px);
   }
 }

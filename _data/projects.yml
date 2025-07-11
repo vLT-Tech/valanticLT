@@ -1,0 +1,75 @@
+- id: vmuc-vally
+  name: "vally"
+  client: "vMUC"
+  industries: ["Conversational AI"]
+  logo: "images/projects/vally.svg"
+  services:
+    - "Team staffing"
+    - "Technical leadership"
+    - "Development"
+    - "Consulting"
+  developers:
+    - name: "Alex Rodriguez"
+      role: "Technical Lead"
+      profile_url: "https://decidalo.com/profiles/alex-rodriguez"
+      avatar: "images/developers/1.svg"
+    - name: "Emma Johnson"
+      role: "Full-Stack Developer"
+      profile_url: "https://decidalo.com/profiles/emma-johnson"
+      avatar: "images/developers/2.svg"
+    - name: "David Kim"
+      role: "DevOps Engineer"
+      profile_url: "https://decidalo.com/profiles/david-kim"
+      avatar: "images/developers/1.svg"
+    - name: "Sophie Mueller"
+      role: "Senior Developer"
+      profile_url: "https://decidalo.com/profiles/sophie-mueller"
+      avatar: "images/developers/2.svg"
+    - name: "James Park"
+      role: "Backend Developer"
+      profile_url: "https://decidalo.com/profiles/james-park"
+      avatar: "images/developers/1.svg"
+
+- id: vcec-de
+  name: "Spryker"
+  client: "vCEC DE"
+  industries: ["E-commerce", "Retail"]
+  logo: "images/projects/spryker.svg"
+  services:
+    - "Team staffing"
+    - "Technical leadership" 
+    - "Development"
+    - "Solution architecture"
+    - "Training"
+  developers:
+    - name: "Sarah Chen"
+      role: "Lead Developer"
+      profile_url: "https://decidalo.com/profiles/sarah-chen"
+      avatar: "images/developers/2.svg"
+    - name: "Marcus Weber"
+      role: "Senior Backend Developer"
+      profile_url: "https://decidalo.com/profiles/marcus-weber"
+      avatar: "images/developers/1.svg"
+    - name: "Lisa Thompson"
+      role: "Frontend Specialist"
+      profile_url: "https://decidalo.com/profiles/lisa-thompson"
+      avatar: "images/developers/2.svg"
+
+- id: vnxt-stripe
+  name: "Stripe"
+  client: "vNXT"
+  industries: ["Fintech", "E-commerce", "Retail"]
+  logo: "images/projects/stripe.svg"
+  services:
+    - "Technical consultancy"
+    - "Development"
+  developers:
+    - name: "Michael Zhang"
+      role: "Senior Consultant"
+      profile_url: "https://decidalo.com/profiles/michael-zhang"
+      avatar: "images/developers/1.svg"
+    - name: "Anna Kowalski"
+      role: "Full-Stack Developer"
+      profile_url: "https://decidalo.com/profiles/anna-kowalski"
+      avatar: "images/developers/2.svg"
+

@@ -1,0 +1,19 @@
+- title: "Share Challenge"
+  icon: "images/icons/chat.svg"
+  description: "We’re ready to hear out and support"
+
+- title: "Solution Design"
+  icon: "images/icons/bulb.svg"
+  description: "Collaborate or delegate"
+
+- title: "Talent Curation"
+  icon: "images/icons/people.svg"
+  description: "Expert pre-selection"
+
+- title: "Evaluation"
+  icon: "images/icons/search.svg"
+  description: "Join or trust our process"
+
+- title: "Integration"
+  icon: "images/icons/checkmark-circle.svg"
+  description: "Seamless onboarding"

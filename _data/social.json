@@ -10,8 +10,8 @@
       "image": "images/social/instagram.svg"
   },
   {
-    "name": "Email",
-    "link": "mailto:ausra.armoskaite@cec.valantic.com",
-    "image": "images/social/email.svg"
+      "name": "Email",
+      "link": "https://www.google.com/calendar/render?action=TEMPLATE&text=Consultation+Call&dates=20250610T120000Z/20250610T123000Z&details=30+min+intro+call+with+our+team&location=Google+Meet&sf=true&output=xm",
+      "image": "images/social/email.svg"
   }
 ]
